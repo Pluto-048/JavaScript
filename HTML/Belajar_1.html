@@ -15,24 +15,34 @@
             padding:0;
             width:100%;
             flex-direction:column;
+            font-family:Georgia, 'Times New Roman', Times, serif;
         }
         .Tampilan-background{
+            display:grid;
+            align-items: flex-start;
             background-color:#ffffff;
             padding:20px;
             border-radius:8px;
             border:2px solid blue;
             box-shadow:7px 7px 7px #1c2f46;
         }
+        .Tampilan-background label{
+            display:flex;
+        }
         .input-1{
             border:1px solid #000000;
             color:#000000;
+            margin:10px 8px;
+            text-align: center;
+            box-shadow:3px 3px 3px #1c2f46;
+            padding:2px 2pc;
         }
         .input-1:focus{
             outline:none;
             opacity:1;
         }
-        .input-1::placeholder{
-            opacity: 1;
+        .input-1:focus::placeholder{
+            color: transparent;
         }
         .Judul{
             background:linear-gradient(to right,#9e81ac,#b47112);
@@ -41,14 +51,42 @@
             box-shadow:7px 7px 7px #1c2f46;
             color:black;
         }
+        .Button{
+            border:none;
+            align-items: center;
+            cursor:pointer;
+            box-shadow:3px 3px 3px #1c2f46;
+            margin-top:50px;
+            padding:8px;
+        }
+        .Button:hover{
+            background-color: #04be20;
+            color:#ffff;
+        }
 
     </style>
 </head>
 <body>
     <h3 class="Judul">Menghitung Berat Badan Ideal</h3>
     <div class="Tampilan-background">
-            <label for="Input-1">Nama : </label>
-            <input type="text" id="Input-1" class="input-1" placeholder="Masukan Nama" style="text-align:center">
+        <div>
+            <label for="Input-1">Nama</label>
+            <input type="text" id="Input-1" class="input-1" placeholder="Masukan Nama" >
+        </div>
+        <div>
+            <label for="Input-2">Usia</label>
+            <input type="text"id="Input-2" placeholder="Masukan Usia" class="input-1" >
+        </div>
+        <div>
+            <label for="Input-3">Tinggi Badan</label>
+            <input type="number" id="Input-3" placeholder="Masukan Tinggi Badan" class="input-1">
+        </div>
+          <div>
+            <label for="Input-4">Berat Badan</label>
+            <input type="number" id="Input-4" placeholder="Masukan Tinggi Badan" class="input-1">
+        </div>
+        <p class="hasil" id="Hasil"></p>
+        <button class="Button" onclick="Hitung()">Submit</button>
     </div>
     
     <script src="../JavaScript/Belajar_1.js"></script>
