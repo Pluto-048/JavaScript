@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Input Dan Output</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:aquamarine;
+            margin:0 20px;
+            margin-top:20px;
+            padding:0;
+            width:100%;
+            flex-direction:column;
+        }
+        .Tampilan-background{
+            background-color:#ffffff;
+            padding:20px;
+            border-radius:8px;
+            border:2px solid blue;
+            box-shadow:7px 7px 7px #1c2f46;
+        }
+        .input-1{
+            border:1px solid #000000;
+            color:#000000;
+        }
+        .input-1:focus{
+            outline:none;
+            opacity:1;
+        }
+        .input-1::placeholder{
+            opacity: 1;
+        }
+        .Judul{
+            background:linear-gradient(to right,#9e81ac,#b47112);
+            border:1px solid #0000;
+            padding:10px 15px;
+            box-shadow:7px 7px 7px #1c2f46;
+            color:black;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 class="Judul">Menghitung Berat Badan Ideal</h3>
+    <div class="Tampilan-background">
+            <label for="Input-1">Nama : </label>
+            <input type="text" id="Input-1" class="input-1" placeholder="Masukan Nama" style="text-align:center">
+    </div>
+    
+    <script src="../JavaScript/Belajar_1.js"></script>
+</body>
+</html>
